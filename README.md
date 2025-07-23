@@ -22,6 +22,7 @@ A simple and effective spam email detection project using a neural network built
 - **Columns**:
   - `Category`: Spam or Ham
   - `Message`: The actual message content
+- ✅ Dataset already uploaded in this repository
 
 ---
 
@@ -29,9 +30,9 @@ A simple and effective spam email detection project using a neural network built
 
 - **Input**: CountVectorized text
 - **Layers**:
-  - Dense(64, activation='relu')
-  - Dense(32, activation='relu')
-  - Dense(1, activation='sigmoid')
+  - `Dense(64, activation='relu')`
+  - `Dense(32, activation='relu')`
+  - `Dense(1, activation='sigmoid')`
 - **Loss**: Binary Crossentropy
 - **Optimizer**: Adam
 
@@ -39,5 +40,26 @@ A simple and effective spam email detection project using a neural network built
 
 ## 📊 Performance
 
-- ✅ **Accuracy**: 99.01%
-- 🧾 **Confusion Matrix**:
+- ✅ **Final Test Accuracy**: **99.01%**
+
+### 🧾 Classification Report:
+
+| Class | Precision | Recall | F1-Score |
+|-------|-----------|--------|----------|
+| Ham   | 0.99      | 1.00   | 1.00     |
+| Spam  | 1.00      | 0.97   | 0.98     |
+| **Avg/Total** | **0.99** | **0.99** | **0.99** |
+
+### 🧮 Confusion Matrix:
+
+| Actual \ Predicted | Ham | Spam |
+|--------------------|-----|------|
+| **Ham**            | 965 |  0   |
+| **Spam**           |  10 | 139  |
+
+---
+
+
+
+
+
